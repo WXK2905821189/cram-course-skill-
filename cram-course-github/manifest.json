@@ -1,0 +1,53 @@
+{
+  "name": "cram-course",
+  "version": "0.3.0",
+  "description": "University exam cram skill for turning PPTX, PDF, DOCX, lecture notes, and question banks into structured study plans, notes, quizzes, drills, spaced repetition schedules, and mock exams.",
+  "license": "MIT",
+  "skill_path": "cram-course",
+  "package_path": "dist/cram-course.skill",
+  "python": ">=3.10",
+  "supported_inputs": ["pptx", "pdf", "docx"],
+  "unsupported_inputs": [
+    {
+      "format": "ppt",
+      "reason": "Convert legacy .ppt files to .pptx before extraction."
+    },
+    {
+      "format": "scanned-pdf",
+      "reason": "Run OCR first so text can be extracted."
+    }
+  ],
+  "required_outputs": [
+    "00_课程导学.md",
+    "01_学习计划.md",
+    "02_覆盖矩阵.md",
+    "10_第01章_<章节名>_01学习笔记.md",
+    "10_第01章_<章节名>_02章节题库.md",
+    "30_名词解释专项.md",
+    "31_公式计算专项.md",
+    "32_对比辨析专项.md",
+    "33_简答论述专项.md",
+    "34_综合应用专项.md",
+    "40_间隔复习计划.md",
+    "41_错题本.md",
+    "50_模拟考试.md"
+  ],
+  "scripts": [
+    "cram-course/scripts/extract_content.py",
+    "cram-course/scripts/spaced_repetition.py"
+  ],
+  "references": [
+    "cram-course/references/learning_theory.md",
+    "cram-course/references/material_diagnostics.md",
+    "cram-course/references/question_templates.md",
+    "cram-course/references/subject_modes.md",
+    "cram-course/references/time_management.md"
+  ],
+  "assets": [
+    "cram-course/assets/coverage_matrix_template.md",
+    "cram-course/assets/error_log_template.md",
+    "cram-course/assets/note_template.md",
+    "cram-course/assets/study_plan_template.md",
+    "cram-course/assets/topic_drill_template.md"
+  ]
+}

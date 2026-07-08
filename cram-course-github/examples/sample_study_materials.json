@@ -1,0 +1,67 @@
+{
+  "files": [
+    {
+      "file": "sample_course.pptx",
+      "type": "pptx",
+      "slides": 3
+    }
+  ],
+  "total_items": 3,
+  "raw_content": [
+    {
+      "id": 1,
+      "title": "栈的基本概念",
+      "content": [
+        "栈是只允许在一端进行插入和删除的线性表。",
+        "栈的特点是后进先出。"
+      ],
+      "source": "sample_course.pptx"
+    },
+    {
+      "id": 2,
+      "title": "队列的基本概念",
+      "content": [
+        "队列是只允许在一端插入、另一端删除的线性表。",
+        "队列的特点是先进先出。"
+      ],
+      "source": "sample_course.pptx"
+    },
+    {
+      "id": 3,
+      "title": "时间复杂度",
+      "content": [
+        "时间复杂度用于描述算法运行时间随输入规模增长的变化趋势。",
+        "常见复杂度包括 O(1)、O(log n)、O(n)、O(n log n)、O(n^2)。"
+      ],
+      "source": "sample_course.pptx"
+    }
+  ],
+  "knowledge_points": [
+    {
+      "title": "栈的基本概念",
+      "source": "sample_course.pptx",
+      "type": "section"
+    },
+    {
+      "title": "队列的基本概念",
+      "source": "sample_course.pptx",
+      "type": "section"
+    },
+    {
+      "title": "时间复杂度",
+      "source": "sample_course.pptx",
+      "type": "section"
+    }
+  ],
+  "definitions": [
+    {
+      "text": "栈是只允许在一端进行插入和删除的线性表。",
+      "source": "sample_course.pptx"
+    },
+    {
+      "text": "队列是只允许在一端插入、另一端删除的线性表。",
+      "source": "sample_course.pptx"
+    }
+  ],
+  "formulas": []
+}
